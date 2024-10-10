@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            border: 2px solid blue; /* Outline warna biru */
+        }
+
+        .avatar-section img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 100px; /* Adjust as needed */
+            height: auto; /* Adjust as needed */
+        }
+
+        .about-me-section, .projects-section, .contact-section {
+            text-align: center;
+        }
+
+        .projects-section, .contact-section {
+            text-align: left;
+        }
+
+        .projects-section h1, .contact-section h1 {
+            text-align: center;
+            color: blue; /* Warna heading */
+        }
+
+        .projects-section h3, .contact-section h4 {
+            margin-bottom: 5px;
+            color: blue; /* Warna heading */
+        }
+
+        .projects-section p, .contact-section p {
+            margin-top: 0;
+        }
+
+        .contact-section a {
+            color: blue; /* Warna LinkedIn */
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box about-me-section">
+            <div class="avatar-section">
+                <img src="c:\Users\HP\Downloads\Pin on we bare bears.jpeg" alt="Avatar Image">
+            </div>
+            <h2>About Me</h2>
+            <p>A passionate individual with a love for Music, Dance, and Design. Skilled in Backend Developments.</p>
+        </div>
+        <div class="box projects-section">
+            <h1>Projects</h1>
+            <div class="project">
+                <div class="box project 1 title-section">
+                    <h3>Project 1 Title</h3>
+                    <p>Brief description of Project 1.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="box project 2 title-section">
+                    <h3>Project 2 Title</h3>
+                    <p>Brief description of Project 2.</p>
+                </div>    
+            </div>
+        </div>
+        <div class="box contact-section">
+            <h1>Contact</h1>
+            <p>Email    : muhanmmadghifarosandywibowo@Gmail.com</p>
+            <p>LinkedIn : <a href="#">Muhammad Ghifaro Sandy Wibowo</a></p>
+        </div>
+    </div>
+</body>
+</html>
 
