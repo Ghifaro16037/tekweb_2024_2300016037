@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change Background Color</h1>
+
+    <!-- Dropdown to choose background color -->
+    <label for="colorDropdown">Choose a background color: </label>
+    <select id="colorDropdown" onchange="changeBackgroundColor()">
+        <option value="white">White</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightyellow">Light Yellow</option>
+        <option value="lightgray">Light Gray</option>
+    </select>
+
+    <br><br>
+
+    <!-- Buttons to choose background color -->
+    <button onclick="setBackgroundColor('white')">White</button>
+    <button onclick="setBackgroundColor('lightblue')">Light Blue</button>
+    <button onclick="setBackgroundColor('lightgreen')">Light Green</button>
+    <button onclick="setBackgroundColor('lightyellow')">Light Yellow</button>
+    <button onclick="setBackgroundColor('lightgray')">Light Gray</button>
+
+    <script>
+        // Function to change background color from dropdown
+        function changeBackgroundColor() {
+            const selectedColor = document.getElementById("colorDropdown").value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+
+        // Function to set background color directly using buttons
+        function setBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
